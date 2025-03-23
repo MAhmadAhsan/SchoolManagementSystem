@@ -1,7 +1,8 @@
 public class Teacher {
     private PersonalInfo personalInfo;
     private ContactInfo contactInfo;
-    Credentials Credentials;
+    private Credentials Credentials;
+
     // Constructor
     public Teacher(PersonalInfo personalInfo, ContactInfo contactInfo, Credentials Credentials) {
         this.personalInfo = personalInfo;
