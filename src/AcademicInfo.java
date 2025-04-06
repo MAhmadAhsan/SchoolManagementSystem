@@ -1,6 +1,6 @@
 import java.util.List;
 public class AcademicInfo {
-    private RollNo rollNo;
+    private String rollNo;
     private String major;
     private String department;
     private double GPA;
@@ -9,7 +9,7 @@ public class AcademicInfo {
     private boolean isEnrolled;
 
     // Constructors
-    public AcademicInfo(RollNo rollNo, String major, String department, double GPA, int year, List<String> courses, boolean isEnrolled) {
+    public AcademicInfo(String rollNo, String major, String department, double GPA, int year, List<String> courses, boolean isEnrolled) {
         this.setRollNo(rollNo);
         this.setMajor(major);
         this.setDepartment(department);
@@ -20,7 +20,7 @@ public class AcademicInfo {
     }
 
     // Getters
-    public RollNo getRollNo() {
+    public String getRollNo() {
         return rollNo;
     }
     public String getMajor() {
@@ -35,7 +35,7 @@ public class AcademicInfo {
     public int getYear() {
         return year;
     }
-    public void setRollNo(RollNo rollNo) {
+    public void setRollNo(String rollNo) {
         this.rollNo = rollNo;
     }
     public void setMajor(String major) {

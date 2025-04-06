@@ -19,17 +19,15 @@ public class ContactInfo {
     public void setEmail(String email) {
         this.email = email;
     }
-
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
     public void setAddress(String address) {
         this.address = address;
     }
 
     @Override
     public  String toString(){
-        return "Email: " + getEmail() + "\nPhone: " + getPhoneNumber() + "\nAddress: " + getAddress();
+        return "\nEmail: " + getEmail() + "\nPhone: " + getPhoneNumber() + "\nAddress: " + getAddress();
    }
 }

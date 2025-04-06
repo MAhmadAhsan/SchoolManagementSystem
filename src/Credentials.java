@@ -31,6 +31,6 @@ public class Credentials {
     // toString Method
     @Override
     public String toString() {
-        return getPassword();
+        return "Password: " + getPassword() + "\nUsername: " + getUsername();
     }
 }

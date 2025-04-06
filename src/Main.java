@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Admin admin = new Admin(new PersonalInfo("Ahmad", 20,"M", "27-11-24", "Pakistani"),new ContactInfo("ahmadahsan7172@gmail.com","0320-6338411", "Mughal street Tanda Road Jalalpur Jattan"),new Credentials("Mbhai34201&","ahmad7173"));
-        System.out.println(admin.getCredentials());
+        Teacher teacher = new Teacher(new PersonalInfo("Ahmad", 23, "M", "27-11-2004", "Pakistani"), new ContactInfo("ahmadahsan7172@gmail.com", "03206338411", "mughal street tanda road jalalpur jattan"), new Credentials("42112222", "23jk2"));
+        System.out.println(teacher);
     }
 }

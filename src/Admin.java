@@ -1,33 +1,18 @@
-public class Admin {
-    private PersonalInfo personalInfo;
-    private ContactInfo contactInfo;
+public class Admin extends Person {
     private Credentials credentials;
 
     // Constructor
     public Admin(PersonalInfo personalInfo, ContactInfo contactInfo, Credentials Credentials) {
-        this.personalInfo = personalInfo;
-        this.contactInfo = contactInfo;
-        this.credentials = Credentials;
+        super(personalInfo, contactInfo);
+        setCredentials(Credentials);
     }
 
     // Getters
-    public PersonalInfo getPersonalInfo() {
-        return personalInfo;
-    }
-    public ContactInfo getContactInfo() {
-        return contactInfo;
-    }
     public Credentials getCredentials() {
         return credentials;
     }
 
     //Setters
-    public void setPersonalInfo(PersonalInfo personalInfo) {
-        this.personalInfo = personalInfo;
-    }
-    public void setContactInfo(ContactInfo contactInfo) {
-        this.contactInfo = contactInfo;
-    }
     public void setCredentials(Credentials credentials) {
         this.credentials = credentials;
     }
@@ -35,6 +20,6 @@ public class Admin {
     // toString
     @Override
     public String toString() {
-        return personalInfo.toString() + "\n" + contactInfo.toString() + "\n" + credentials.toString();
+        return super.toString() + "\n" + getCredentials();
     }
 }
