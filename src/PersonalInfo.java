@@ -3,21 +3,53 @@ public class PersonalInfo {
     private int age;
     private String gender;
     private String dateOfBirth;
-    public String nationality;
+    private String nationality;
 
+    // Constructor
     public PersonalInfo(String name, int age, String gender, String dateOfBirth, String nationality) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.dateOfBirth = dateOfBirth;
-        this.nationality=nationality;
+        this.setName(name);
+        this.setAge(age);
+        this.setGender(gender);
+        this.setDateOfBirth(dateOfBirth);
+        this.setNationality(nationality);
     }
 
-    public String getName() { return name; }
-    public int getAge() { return age; }
-    public String getGender() { return gender; }
-    public String getDateOfBirth() { return dateOfBirth; }
-    public String getNationality() { return nationality; }
+    // Getters
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public String getGender() {
+        return gender;
+    }
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+    public String getNationality() {
+        return nationality;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+
+    // toString
+    @Override
     public String toString() {
         return "Name : "+ name +"\nAge :  " + age + "\nGender :  " + gender + "\nDate of Birth : " + dateOfBirth+"\nNationality"+nationality;
     }

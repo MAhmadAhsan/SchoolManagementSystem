@@ -1,16 +1,16 @@
 public class Admin {
     private PersonalInfo personalInfo;
     private ContactInfo contactInfo;
-    private Credentials Credentials;
+    private Credentials credentials;
 
     // Constructor
     public Admin(PersonalInfo personalInfo, ContactInfo contactInfo, Credentials Credentials) {
         this.personalInfo = personalInfo;
         this.contactInfo = contactInfo;
-        this.Credentials = Credentials;
+        this.credentials = Credentials;
     }
 
-    // Getter
+    // Getters
     public PersonalInfo getPersonalInfo() {
         return personalInfo;
     }
@@ -18,20 +18,23 @@ public class Admin {
         return contactInfo;
     }
     public Credentials getCredentials() {
-        return Credentials;
+        return credentials;
     }
 
-    //Setter
+    //Setters
     public void setPersonalInfo(PersonalInfo personalInfo) {
         this.personalInfo = personalInfo;
     }
     public void setContactInfo(ContactInfo contactInfo) {
         this.contactInfo = contactInfo;
     }
-    public void setPassword(Credentials Credentials) {
-        this.Credentials = Credentials;
+    public void setCredentials(Credentials credentials) {
+        this.credentials = credentials;
     }
+
+    // toString
+    @Override
     public String toString() {
-        return personalInfo.toString() + "\n" + contactInfo.toString() + "\n" + Credentials.toString();
+        return personalInfo.toString() + "\n" + contactInfo.toString() + "\n" + credentials.toString();
     }
 }

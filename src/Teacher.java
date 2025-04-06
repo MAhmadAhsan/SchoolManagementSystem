@@ -1,15 +1,14 @@
 public class Teacher {
     private PersonalInfo personalInfo;
     private ContactInfo contactInfo;
-    private Credentials Credentials;
+    private Credentials credentials;
 
     // Constructor
     public Teacher(PersonalInfo personalInfo, ContactInfo contactInfo, Credentials Credentials) {
         this.personalInfo = personalInfo;
         this.contactInfo = contactInfo;
-        this.Credentials = Credentials;
+        this.credentials = Credentials;
     }
-
 
     // Getters
     public PersonalInfo getPersonalInfo() {
@@ -19,8 +18,9 @@ public class Teacher {
         return contactInfo;
     }
     public Credentials getCredentials() {
-        return Credentials;
+        return credentials;
     }
+
     //Setters
     public void setPersonalInfo(PersonalInfo personalInfo) {
         this.personalInfo = personalInfo;
@@ -29,9 +29,12 @@ public class Teacher {
         this.contactInfo = contactInfo;
     }
     public void setCredentials(Credentials Credentials) {
-        this.Credentials = Credentials;
+        this.credentials = Credentials;
     }
+
+    // toString
+    @Override
     public String toString() {
-        return personalInfo.toString() + "\n " + contactInfo.toString() + "\n" + Credentials.toString();
+        return personalInfo.toString() + "\n " + contactInfo.toString() + "\n" + credentials.toString();
     }
 }

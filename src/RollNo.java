@@ -3,12 +3,7 @@ public class RollNo {
 
     // Constructor
     public RollNo(String rollNo) {
-        setRollNo(rollNo);
-    }
-    // toString method
-    @Override
-    public String toString() {
-        return rollNo;
+        this.setRollNo(rollNo);
     }
 
     // Getter
@@ -23,5 +18,11 @@ public class RollNo {
         }else{
             throw new IllegalArgumentException("Roll No must be 10 digits");
         }
+    }
+
+    // toString method
+    @Override
+    public String toString() {
+        return rollNo;
     }
 }
