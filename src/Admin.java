@@ -31,4 +31,7 @@ public class Admin {
     public void setPassword(Credentials Credentials) {
         this.Credentials = Credentials;
     }
+    public String toString() {
+        return personalInfo.toString() + "\n" + contactInfo.toString() + "\n" + Credentials.toString();
+    }
 }

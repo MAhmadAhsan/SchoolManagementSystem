@@ -10,6 +10,7 @@ public class Teacher {
         this.Credentials = Credentials;
     }
 
+
     // Getters
     public PersonalInfo getPersonalInfo() {
         return personalInfo;
@@ -29,5 +30,8 @@ public class Teacher {
     }
     public void setCredentials(Credentials Credentials) {
         this.Credentials = Credentials;
+    }
+    public String toString() {
+        return personalInfo.toString() + "\n " + contactInfo.toString() + "\n" + Credentials.toString();
     }
 }

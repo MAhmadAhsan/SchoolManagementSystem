@@ -26,4 +26,7 @@ public class AcademicInfo {
     public int getYear() { return year; }
     public List<String> getCourses() { return courses; }
     public boolean isEnrolled() { return isEnrolled; }
+    public String toString() {
+        return "RollNo :"+ rollNo + "\nMajor Subjects :"+ major + "\nDepartment :"+ department + "\nGPA :"+ GPA + "\nYear :"+ year+ "\nCourses :"+ courses + "\nisEnrolled :"+ isEnrolled;
+    }
 }

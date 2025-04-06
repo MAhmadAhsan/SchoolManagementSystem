@@ -2,6 +2,7 @@ public class Student {
      private PersonalInfo personalInfo;
      private AcademicInfo academicInfo;
      private ContactInfo contactInfo;
+
      public Student(PersonalInfo personalInfo, AcademicInfo academicInfo, ContactInfo contactInfo) {
           this.personalInfo = personalInfo;
           this.academicInfo = academicInfo;
@@ -24,11 +25,16 @@ public class Student {
      public PersonalInfo getPersonalInfo() {
           return personalInfo;
      }
+
      public AcademicInfo getAcademicInfo() {
           return academicInfo;
      }
+
      public ContactInfo getContactInfo() {
           return contactInfo;
      }
 
+     public String toString() {
+          return personalInfo.toString() + "\n " + academicInfo.toString() + "\n " + contactInfo.toString();
+     }
 }

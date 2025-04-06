@@ -12,4 +12,7 @@ public class ContactInfo {
     public String getEmail() { return email; }
     public String getPhoneNumber() { return phoneNumber; }
     public String getAddress() { return address; }
+   public  String toString(){
+        return "Email: " + email + "\nPhone: " + phoneNumber + "\nAddress: " + address;
+   }
 }
